@@ -156,51 +156,51 @@ li {
 
 header {
 	width: 100%;
-	height: 3.125em;/*50/16*/
-	background: white;
-    position: fixed;
-    z-index: 1000;
+	background: silver;
 }
 
-nav {
-    height: 3.125em;/*50/16*/
-    // min-width: 300px;
+/*========================================slider gallery===========================*/
+
+.frame {//limits the amount of images that are visible
+    margin: 10px auto;
+    width: 160px;
+    overflow: hidden;
+    border: 10px solid silver;
+    // padding: 10px;
+}
+
+.slider {//contains the images
+    // position: absolute;
+    width: 1120px;
+    
+    li:first-child {
+        margin: 0;
+    }
+
+    li {
+        float: left;
+        width: 160;
+        // margin-left: 10px;
+    }
+}
+
+//------------------------------ gallery buttons
+
+.prev,.next {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: silver;
+    text-align: center;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
     float: right;
-    margin: 0 20px 0 0;
-    position: relative;
-
-	    li {
-		    float: left;
-
-		    a {
-				padding: 24px 20px 0 20px;
-				display: inline-block;
-				font-size: 14px;
-                position: relative;
-                z-index: 15;
-		    }
-
-            a:hover {
-                color: #F65857;
-            }
-		}
- 
 }
-
-/*========================================Scene One===========================*/
-
-
-/*======================================== Skills scene two ===========================*/
-
-
-
-/*======================================== Work scene three ===========================*/
-
-
-
-/*======================================== contact scene four ===========================*/
-
-
 
 /*========================================Footer===========================*/
 
