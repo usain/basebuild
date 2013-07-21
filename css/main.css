@@ -1,0 +1,392 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*----- @font-face fonts -----*/
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  min-width: 320px;
+  color: black;
+  font-family: helvetica, sans-serif; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+
+   ========================================================================== */
+a {
+  text-decoration: none;
+  color: #333333; }
+
+a:hover {
+  text-decoration: underline; }
+
+p {
+  color: black;
+  font-weight: bold;
+  font-size: 1.125em;
+  /*18/16*/
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+::selection {
+  background: light-blue;
+  /* Safari */ }
+
+::-moz-selection {
+  background: light-blue;
+  /* Firefox */ }
+
+.selected {
+  color: #F65857; }
+
+/*========================================Text Styles ===========================*/
+/*========================================preloader styles ===========================*/
+.wrapper {
+  width: 93.75%;
+  /*960/1024*100*/
+  max-width: 960px;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  height: 3.125em;
+  /*50/16*/
+  background: white;
+  position: fixed;
+  z-index: 1000; }
+
+nav {
+  height: 3.125em;
+  /*50/16*/
+  float: right;
+  margin: 0 20px 0 0;
+  position: relative; }
+  nav li {
+    float: left; }
+    nav li a {
+      padding: 24px 20px 0 20px;
+      display: inline-block;
+      font-size: 14px;
+      position: relative;
+      z-index: 15; }
+    nav li a:hover {
+      color: #F65857; }
+
+/*========================================Scene One===========================*/
+/*======================================== Skills scene two ===========================*/
+/*======================================== Work scene three ===========================*/
+/*======================================== contact scene four ===========================*/
+/*========================================Footer===========================*/
+footer {
+  width: 100%;
+  background: black; }
+  footer .wrapper {
+    position: relative; }
+    footer .wrapper .backToTop {
+      position: absolute;
+      border-radius: 25px;
+      width: 100px;
+      height: 60px;
+      background: black url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: -40px;
+      left: 47%;
+      /*400px*/ }
+    footer .wrapper .backToTop:hover {
+      background-position: 0px -62px; }
+  footer p {
+    display: inline-block;
+    margin: 32px 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter; }
+  footer .socialMedia {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    float: right;
+    margin: 24px 5px; }
+  footer .socialMedia:hover {
+    border-bottom: 3px solid #F72B2B;
+    margin-top: 21px; }
+  footer .facebook {
+    background: url(../img/facebook.svg) #f65857;
+    background-size: cover; }
+  footer .twitter {
+    background: url(../img/twitter.svg) #f65857;
+    background-size: cover; }
+  footer .linkedin {
+    background: url(../img/linkedin.svg) #f65857;
+    background-size: cover; }
+
+/*--------------------------------- IE message -------------------------------------------*/
+.ie-message {
+  display: none; }
+
+.lt-ie9 .ie-message {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 940px;
+  background-color: #C5F4FF;
+  color: #333333; }
+
+.ie-message p {
+  font-size: 18px; }
+
+.ie-message p span {
+  text-decoration: underline; }
+
+.ie-message a {
+  font-size: 24px;
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto 0;
+  background-color: silver;
+  text-decoration: none;
+  color: #333333; }
+
+.ie-message a:hover {
+  color: #db1f42;
+  margin: 5px auto;
+  border-bottom: 5px solid #333333; }
+
+.lt-ie9 .wrapper {
+  display: none; }
+
+/* ==========================================================================
+*******************************************************************************
+   Mediaqueries
+*******************************************************************************
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
