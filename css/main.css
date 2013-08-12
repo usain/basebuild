@@ -89,7 +89,6 @@ a:hover {
 
 p {
   color: black;
-  font-weight: bold;
   font-size: 1.125em;
   /*18/16*/
   margin: 0; }
@@ -147,10 +146,6 @@ nav {
     nav li a:hover {
       color: #F65857; }
 
-/*========================================Scene One===========================*/
-/*======================================== Skills scene two ===========================*/
-/*======================================== Work scene three ===========================*/
-/*======================================== contact scene four ===========================*/
 /*========================================Footer===========================*/
 footer {
   width: 100%;
@@ -199,7 +194,7 @@ footer {
 .ie-message {
   display: none; }
 
-.lt-ie9 .ie-message {
+.lt-ie8 .ie-message {
   display: block;
   margin: 0 auto;
   padding: 10px;
@@ -229,7 +224,7 @@ footer {
   margin: 5px auto;
   border-bottom: 5px solid #333333; }
 
-.lt-ie9 .wrapper {
+.lt-ie8 .wrapper {
   display: none; }
 
 /* ==========================================================================
