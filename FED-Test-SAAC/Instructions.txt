@@ -1,0 +1,24 @@
+
+REACTIVE FED TEST BRIEF
+==========================================================
+
+
+Please allocate yourself 6 hours to complete the following tasks in order.
+ 
+
+Task 1
+Construct a template using the included PSD using HTML, CSS and images. The template should conform to level A in accordance with W3C Content Accessibility Guidelines. The PSD also includes an optional "Quick Access" menu. We want you to leave this to last and only complete it if you have spare time. We should stress for quality vs. trying to build everything in the PSD.
+
+NOTE: Please DO NOT worry about font replacement at this time.
+
+
+Task 2
+Develop a jquery solution so that the main banner carousel either slides or fades between the 3 included images. You may use 3rd party plugins or come up with your own solution.
+
+
+Task 3
+There is an included "Conduit_500.font.js" cufon font file. Using the cufon framework replace the relevent headings in your template.
+
+
+
+

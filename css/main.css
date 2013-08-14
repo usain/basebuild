@@ -6,9 +6,12 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 /*----- @font-face fonts -----*/
-/* ==========================================================================
+/* =======================================================================
+   Variables
+   =================================================================== */
+/* ======================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
+   =================================================================== */
 html,
 button,
 input,
@@ -20,8 +23,10 @@ body {
   font-size: 1em;
   line-height: 1.4;
   min-width: 320px;
-  color: black;
-  font-family: helvetica, sans-serif; }
+  color: #777777;
+  background-color: #f3f3f3;
+  font-family: arial, helvetica, sans-serif;
+  min-width: 960px; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -69,7 +74,7 @@ textarea {
 
 /* ==========================================================================
    Chrome Frame prompt
-   ========================================================================== */
+   ==================================================================== */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -79,18 +84,55 @@ textarea {
 /* ==========================================================================
    Author's custom styles
 
-   ========================================================================== */
-a {
+   ==================================================================== */
+h1 {
+  text-indent: -99999px;
+  margin: 0;
+  padding: 0;
+  position: absolute; }
+
+h2 {
+  font-size: 40px;
+  margin: 30px 0 0; }
+
+h3 {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  font-family: myriad pro;
+  font-weight: lighter;
+  line-height: 25px; }
+
+h4 {
+  color: #666666;
+  font-size: 1em;
+  margin: 0; }
+
+h6 {
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-family: arial; }
+
+a:link {
   text-decoration: none;
-  color: #333333; }
+  color: #0088ad; }
+
+a:visited {
+  text-decoration: underline; }
 
 a:hover {
+  text-decoration: none; }
+
+a:active {
   text-decoration: underline; }
 
 p {
-  color: black;
-  font-size: 1.125em;
-  /*18/16*/
+  color: #666666;
+  font-size: 0.8125em;
+  /*13/16*/
   margin: 0; }
 
 ul {
@@ -110,85 +152,186 @@ li {
   background: light-blue;
   /* Firefox */ }
 
-.selected {
-  color: #F65857; }
-
-/*========================================Text Styles ===========================*/
-/*========================================preloader styles ===========================*/
-.wrapper {
-  width: 93.75%;
-  /*960/1024*100*/
-  max-width: 960px;
-  margin: 0 auto; }
-
+/*===================================Text Styles ======================*/
+/*===================================Header======================*/
 header {
-  width: 100%;
-  height: 3.125em;
-  /*50/16*/
   background: white;
-  position: fixed;
-  z-index: 1000; }
-
-nav {
-  height: 3.125em;
-  /*50/16*/
-  float: right;
-  margin: 0 20px 0 0;
-  position: relative; }
-  nav li {
-    float: left; }
-    nav li a {
-      padding: 24px 20px 0 20px;
-      display: inline-block;
-      font-size: 14px;
-      position: relative;
-      z-index: 15; }
-    nav li a:hover {
-      color: #F65857; }
-
-/*========================================Footer===========================*/
-footer {
-  width: 100%;
-  background: black; }
-  footer .wrapper {
-    position: relative; }
-    footer .wrapper .backToTop {
+  border-bottom: 1px solid #dfdfdf;
+  padding-top: 20px;
+  min-width: 960px; }
+  header .wrapper {
+    margin: 0 auto; }
+  header .logo {
+    display: block;
+    width: 130px;
+    height: 100px;
+    background-image: url(../img/spriteSheet.png);
+    margin: 0 25px 25px; }
+  header nav ul {
+    margin: 0; }
+    header nav ul li a {
+      float: left;
+      padding: 10px 10px 10px 80px;
+      position: relative; }
+    header nav ul .magnify, header nav ul .clock, header nav ul .heart, header nav ul .pen {
+      background: url(../img/navSpriteSheet.png) no-repeat;
+      width: 41px;
+      height: 41px;
       position: absolute;
-      border-radius: 25px;
-      width: 100px;
-      height: 60px;
-      background: black url(../img/arrow.svg);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      top: -40px;
-      left: 47%;
-      /*400px*/ }
-    footer .wrapper .backToTop:hover {
-      background-position: 0px -62px; }
-  footer p {
-    display: inline-block;
-    margin: 32px 20px;
-    color: white;
-    font-size: 12px;
-    font-weight: lighter; }
-  footer .socialMedia {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
+      top: 12px;
+      left: 25px; }
+    header nav ul .magnify {
+      background-position: 0px -42px; }
+    header nav ul .heart {
+      background-position: 0px -82px; }
+    header nav ul .clock {
+      background-position: 0px -124px; }
+    header nav ul span {
+      color: #666666;
+      font-size: 22px;
+      font-weight: lighter;
+      line-height: 22px; }
+    header nav ul p {
+      color: #777777;
+      font-size: 1em;
+      font-weight: lighter;
+      line-height: 1em; }
+    header nav ul a:hover {
+      background-color: #f78f1e; }
+
+/*===================================Wrapper======================*/
+.wrapper {
+  width: 960px;
+  margin: 40px auto 0; }
+
+/*===================================Slider======================*/
+.flexslider {
+  width: 630px;
+  height: 420px;
+  margin: 5px;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+
+.slider img {
+  float: left;
+  width: 630px; }
+
+.flex-control-nav.flex-control-paging {
+  position: absolute;
+  right: 20px;
+  top: 380px; }
+  .flex-control-nav.flex-control-paging .flex-active {
+    background-color: #6fcde4; }
+  .flex-control-nav.flex-control-paging li {
+    float: left; }
+    .flex-control-nav.flex-control-paging li a {
+      display: block;
+      width: 13px;
+      height: 13px;
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 8.5px;
+      text-indent: 999999px; }
+
+/*===================================Aside======================*/
+aside {
+  background-color: white;
+  float: left;
+  width: 310px;
+  height: 420px;
+  margin: 5px; }
+  aside h3 {
+    padding: 18px 0 17px 55px;
+    background-color: #f78f1e;
+    position: relative; }
+    aside h3 span {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../img/navSpriteSheet.png);
+      background-position: 0px -164px;
+      top: 12px;
+      left: 15px; }
+  aside .quickMenu {
+    width: 270px;
+    margin: 20px auto; }
+    aside .quickMenu li:first-child {
+      border-top: none; }
+    aside .quickMenu li {
+      border-top: 1px solid #dfdfdf;
+      position: relative; }
+      aside .quickMenu li a {
+        display: block;
+        padding: 10px 0 10px 17px;
+        font-size: 13px;
+        color: #666666;
+        font-weight: bold; }
+      aside .quickMenu li a:hover {
+        background-color: #e7e7e8; }
+      aside .quickMenu li span {
+        position: absolute;
+        width: 8px;
+        height: 10px;
+        background: url(../img/navSpriteSheet.png);
+        background-position: 0px -194px;
+        top: 12px;
+        left: 0px; }
+
+/*===================================News======================*/
+.news {
+  width: 950px;
+  margin: 0 5px 60px; }
+  .news article {
+    width: 685px;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 20px 20px 20px 5px; }
+    .news article span {
+      font-size: 0.8125em;
+      /*13/16*/
+      font-weight: bold;
+      line-height: 16px;
+      color: #666666;
+      width: 150px;
+      height: 80px;
+      display: block;
+      float: left;
+      margin-left: 10px; }
+    .news article .primary {
+      width: 370px;
+      float: left; }
+      .news article .primary h4 {
+        line-height: 16px; }
+      .news article .primary p {
+        margin-top: 9px; }
+      .news article .primary .category a {
+        text-decoration: underline; }
+    .news article img {
+      width: 130px;
+      float: right; }
+  .news article:hover {
+    background-color: #e7e7e8; }
+
+/*====================================Footer===========================*/
+footer {
+  background-color: #0088ad;
+  padding: 15px 0; }
+  footer .wrapper {
+    margin: 0 auto; }
+  footer h6 {
+    float: left; }
+  footer .footerNav {
     float: right;
-    margin: 24px 5px; }
-  footer .socialMedia:hover {
-    border-bottom: 3px solid #F72B2B;
-    margin-top: 21px; }
-  footer .facebook {
-    background: url(../img/facebook.svg) #f65857;
-    background-size: cover; }
-  footer .twitter {
-    background: url(../img/twitter.svg) #f65857;
-    background-size: cover; }
-  footer .linkedin {
-    background: url(../img/linkedin.svg) #f65857;
-    background-size: cover; }
+    line-height: 12px; }
+    footer .footerNav li {
+      float: left; }
+    footer .footerNav a {
+      color: white;
+      font-family: arial;
+      font-weight: lighter;
+      font-size: 12px;
+      line-height: 12px;
+      margin-left: 15px; }
 
 /*--------------------------------- IE message -------------------------------------------*/
 .ie-message {

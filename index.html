@@ -5,13 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title></title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <title>Reactive Test</title>
         <meta name="viewport" content="width=device-width">
-        <meta name="geo.region" content="">
-        <meta name="geo.placename" content="">
+        <meta http-equiv="content-language" content="en">
         <link rel="shortcut icon" href="favicon.ico" >
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,40 +15,113 @@
 
     </head>
     <body>
-
+        
         <header class="clearfix">
-            
-            
+            <div class="wrapper clearfix">
+                <a href="index.html" class="logo">
+                    <h1>SA Aquatic &amp; Leisure Center</h1>
+                </a>
 
+                <nav class="clearfix">
+                    <ul>
+                        <li><a href="#"><span class="magnify"></span><span>Discover</span><p>what's at the centre</p></a></li>
+                        <li><a href="#"><span class="clock"></span><span>Participate</span><p>classes,programs &amp; timetables</p></a></li>
+                        <li><a href="#"><span class="heart"></span><span>Health &amp; Wellness</span><p>help to stay on track</p></a></li>
+                        <li><a href="#"><span class="pen"></span><span>Join</span><p>become a member</p></a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-
-        <section class="sceneOne clearfix" id="home">
-
-           
-
-        </section>
-
- 
-        <footer>
+<!-- end of header -->
+        <div class="wrapper clearfix">
             
+            <div class="flexslider">
+
+                <ul class="slides">
+                    <li><img src="img/image1.jpg" alt="People enjoying the facility"></li>
+                    <li><img src="img/image2.jpg" alt="People enjoying the facility"></li>
+                    <li><img src="img/image3.jpg" alt="People enjoying the facility"></li> 
+                </ul>
             
+            </div>
+
+            <aside>
+                <h3><span></span>Quick Access</h3>
+
+                <ul class="quickMenu">
+                    <li><a href="#"><span></span>Locations</a></li>
+                    <li><a href="#"><span></span>Health &amp; Fitness</a></li>
+                    <li><a href="#"><span></span>Timetables</a></li>
+                    <li><a href="#"><span></span>Membership Options</a></li>
+                    <li><a href="#"><span></span>Lap Lane Availability</a></li>
+                    <li><a href="#"><span></span>Aquatic Safety</a></li>
+                    <li><a href="#"><span></span>Community Programs</a></li>
+                </ul>
+
+            </aside>
+
+            <section class="news clearfix">
+                <h2>News &amp; Events</h2>
+
+                <article class="clearfix">
+                    <span class="date">15 June 2011</span> 
+                    <div class="primary">
+                        <h4>Health Club Opening June 4th</h4>
+                        <p>Sed non odio arcu, eget gravida libero. Integer eleifend dolor ac pulvinar vel condimentum felis pretium. Donec vitae augue ut ipsum suscipit pellentesque... <a href="#">more.</a></p>
+                        <p class="category">Category: <a href="#">Fitness</a></p>
+                    </div>
+                    <img src="img/gymGoers.jpg" alt="Gym goers enjoying the facilities" />
+                </article>
+
+                <article class="clearfix">
+                    <span class="date">15 June 2011</span> 
+                    <div class="primary">
+                        <h4>Health Club Opening June 4th</h4>
+                        <p>Sed non odio arcu, eget gravida libero. Integer eleifend dolor ac pulvinar vel condimentum felis pretium. Donec vitae augue ut ipsum suscipit pellentesque... <a href="#">more.</a></p>
+                        <p class="category">Category: <a href="#">Fitness</a></p>
+                    </div>
+                    <img src="img/gymGoers.jpg" alt="Gym goers enjoying the facilities" />
+                </article>
+
+                <article class="clearfix">
+                    <span class="date">15 June 2011</span> 
+                    <div class="primary">
+                        <h4>Health Club Opening June 4th</h4>
+                        <p>Sed non odio arcu, eget gravida libero. Integer eleifend dolor ac pulvinar vel condimentum felis pretium. Donec vitae augue ut ipsum suscipit pellentesque... <a href="#">more.</a></p>
+                        <p class="category">Category: <a href="#">Fitness</a></p>
+                    </div>
+                    <img src="img/gymGoers.jpg" alt="Gym goers enjoying the facilities" />
+                </article>
+
+            </section>
+
+        </div>
+
+        <footer class="clearfix">
+            
+            <div class="wrapper clearfix">
+                <h6>&copy; YMCA 2011</h6>
+                <ul class="footerNav">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+
+            </div>
 
         </footer>
 
     <!-- ie message here -->
     <div class="ie-message">
-        <hr>
+        
         <h1>You are using an out of date web browser!</h1>
-        <p>Please upgrade your browser. How about trying one of these:</p>
-        <p><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a></p>
-        <p><a href="https://www.google.com/intl/en/chrome/browser/?brand=CHMA&utm_campaign=en&utm_source=en-ha-aunz-ct&utm_medium=ha">Google Chrome</a></p>
-        <hr>
+        <p>Please upgrade your browser. How about going to <a href="http://browsehappy.com/">Browse Happy</a> and see what is on offer and why it is a good idea to change browsers!</p>
+        
     </div>
         <script src="js/vendor/jquery-1.9.0.min.js"></script>
-        <script src="js/vendor/jpreloader.js"></script>
-        <script src="js/jquery.formvalidation.js"></script>
-        <script src="js/vendor/waypoints.min.js"></script>
-        <script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+        <script src="js/vendor/cufon-yui.js"></script>
+        <script src="js/vendor/Conduit_500.font.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
